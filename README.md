@@ -23,13 +23,13 @@ Jawaban UAS Aji Wibowo (72170108)
 
 # CRUD Dokter
 * Tambah Data Dokter (POST)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/dokter_post.png)
 
 * Ambil Data Dokter (GET)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/dokter_get.png)
 
 * Edit Data Dokter (PUT)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/dokter_put.png)
 
 * Hapus Data Dokter (DELETE)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/dokter_delete.png)
