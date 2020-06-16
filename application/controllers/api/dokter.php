@@ -21,7 +21,7 @@
             $input = $this->input->post();
             $this->db->insert('dokter', $input);
 
-            $this->response(['Data Dokter Berhasil Dibuat.'], REST_Controller::HTTP_OK);
+            $this->response(['Data Dokter Berhasil Ditambahkan'], REST_Controller::HTTP_OK);
         }
 
         /**
@@ -35,7 +35,7 @@
              $input = $this->put();
              $this->db->update('dokter', $input, array('id_dokter' =>$id));
 
-             $this->response(['Berhasil mengubah Data Dokter'], REST_Controller::HTTP_OK);
+             $this->response(['Data Dokter berhasil diubah'], REST_Controller::HTTP_OK);
          }
 
          function index_delete() {
@@ -43,9 +43,9 @@
             $this->db->where('id_dokter', $id);
             $delete = $this->db->delete('dokter');
             if ($delete) {
-                $this->response(array('status' => 'Berhasil melakukan Penghapusan'), 201);
+                $this->response(array('status' => 'Data Dokter Berhasil dihapus'), 201);
             } else {
-                $this->response(array('status' => 'Gagal Melakukan Penghapusan', 502));
+                $this->response(array('status' => 'Data Dokter Gagal dihapus', 502));
             }
         }
     }

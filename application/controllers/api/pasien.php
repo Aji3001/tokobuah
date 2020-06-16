@@ -21,7 +21,7 @@
             $input = $this->input->post();
             $this->db->insert('pasien', $input);
 
-            $this->response(['Data Pasien Berhasil dibuat.'], REST_Controller::HTTP_OK);
+            $this->response(['Data Pasien Berhasil ditambahkan'], REST_Controller::HTTP_OK);
         }
 
         /**
@@ -40,20 +40,20 @@
             $this->db->where('no_rm', $id);
             $update = $this->db->update('pasien', $data);
             if ($update) {
-                $this->response(array('status' => 'Berhasil Merubah data pasien'), 201);
+                $this->response(array('status' => 'Data pasien berhasil diubah'), 201);
             } else {
-                $this->response(array('status' => 'Gagal', 502));
+                $this->response(array('status' => 'Data pasien gagal diubah', 502));
             }
         }
 
          function index_delete() {
-            $id = $this->delete('id');
-            $this->db->where('id', $id);
+            $id = $this->delete('no_rm');
+            $this->db->where('no_rm', $id);
             $delete = $this->db->delete('pasien');
             if ($delete) {
-                $this->response(array('status' => 'Berhasil menghapus data pasien'), 201);
+                $this->response(array('status' => 'Data pasien berhasil dihapus'), 201);
             } else {
-                $this->response(array('status' => 'Gagal Menghapus data pasien', 502));
+                $this->response(array('status' => 'Data pasien gagal dihapus', 502));
             }
         }
     }

@@ -10,16 +10,16 @@ Jawaban UAS Aji Wibowo (72170108)
 
 # CRUD Pasien
 * Tambah Data Pasien (POST)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/pasien_post.png)
 
 * Ambil Data Pasien (GET)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/pasien_get.png)
 
 * Edit Data Pasien (PUT)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/pasien_put.png)
 
 * Hapus Data Pasien (DELETE)
-<!-- ![alt text](assets/images/adm-set_1.png) -->
+![alt text](assets/images/pasien_delete.png)
 
 # CRUD Dokter
 * Tambah Data Dokter (POST)
